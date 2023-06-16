@@ -1,0 +1,79 @@
+.gray-bg {
+  width: 100%;
+  background-color: #eff1f7;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services {
+  display: inline-block;
+  width: 100%;
+  background-color: #eff1f7;
+  padding-top: 80px;
+}
+
+.service-boxes {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-rows: auto;
+  column-gap: 30px;
+  row-gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+
+.box {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.box:hover {
+  background-image: linear-gradient(-41deg, #09c778, #01a0f9);
+  background-color: transparent;
+  transition: 0.3s ease-out;
+  position: relative;
+  opacity: 0.9;
+  color: #fff;
+}
+
+.box:hover p {
+  color: #fff;
+  transition: 0.3s ease-out;
+}
+
+.service-boxes i[class*='flaticon'] {
+  font-size: 70px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  background-image: -webkit-linear-gradient(#01a0f9, #09c778);
+  opacity: 1;
+}
+
+.box:hover i[class*='flaticon'] {
+  transition: 0.5s ease;
+  color: #fff;
+  position: inherit;
+  opacity: 1;
+}
+
+.service-boxes h5 {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
